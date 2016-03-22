@@ -50,4 +50,9 @@ class Page extends Model {
         $sql = "DELETE FROM `pages` WHERE `id` = '{$id}';";
         return $this->db->query($sql);
     }
+
+    public function getNearestSD(){
+        $sql = "SELECT LAST_INSERT_ID();";
+        return $this->db->query($sql);
+    }
 }

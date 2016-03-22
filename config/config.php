@@ -15,7 +15,7 @@ Config::set('default_controller', 'pages');
 Config::set('default_action', 'index');
 
 Config::set('db.host', 'localhost');
-Config::set('db.host_for_PDO', 'mysql:host=127.0.0.1;dbname=mvc');
+Config::set('db.host_for_PDO', 'mysql:host=127.0.0.1;dbname=sdating');
 Config::set('db.user', 'mysql');
 Config::set('db.password', 'mysql');
 Config::set('db.db_name', 'mvc');

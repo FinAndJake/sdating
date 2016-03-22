@@ -17,6 +17,8 @@ class App{
 
         self::$db = new DB(Config::get('db.host_for_PDO'),Config::get('db.user'),Config::get('db.password'));
 
+        self::$db->query('SET NAMES utf8;');
+
         Lang::load(self::$router->getLanguage());
 
         $controller_class = ucfirst(self::$router->getController()) . 'Controller';
@@ -29,7 +31,6 @@ class App{
                 Router::redirect('/admin/users/login');
             }
         }
-
 
         /*Calling controller method*/
         $controller_object = new $controller_class;

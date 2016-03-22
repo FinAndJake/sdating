@@ -2,9 +2,9 @@
 
 class UsersController extends Controller{
 
-    public function __construct($data=array()){
+    public function __construct($data = array() ){
         parent::__construct($data);
-        $this->model = new User;
+        $this->model = new User();
     }
 
     public function admin_login(){
