@@ -54,5 +54,6 @@ class Page extends Model {
     public function getNearestSD(){
         $sql = "SELECT LAST_INSERT_ID();";
         return $this->db->query($sql);
+
     }
 }
